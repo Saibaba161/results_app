@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+/*Navbar*/
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'comic neue';
+}
+/*Form*/
+form {
+  height: 300px;
+  width: 300px;
+  background: #fff;
+  border-radius: 4px;
+  shadow: 1px;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  font-family: 'comic neue';
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+form button {
+  background: #80dd4e;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px; 
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  height: 260px;
+}
+
+/*Error*/
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+.login-form.error{
+  height: calc(400px + 10px)
+}
+
+/*Table*/
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.styled-table {
+  width: 80%; /* Adjust the width as needed */
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+  border: 2px solid #009879;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table caption {
+  caption-side: top;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+  margin-bottom: 15px; /* Added margin to create space below the caption */
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
