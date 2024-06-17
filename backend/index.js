@@ -9,7 +9,7 @@ const userRoutes = require('./routes/userRoutes')
 const app = express()
 
  const corsOptions = {
-   origin: 'https://www.saibaba.uncalledinnovators.com/',//(https://your-client-app.com)
+   origin: '*',//(https://your-client-app.com)
    optionsSuccessStatus: 200,
  };
 
