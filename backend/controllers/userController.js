@@ -6,6 +6,7 @@ const loginUser = async (req, res) => {
     try{
         const user = await User.login(reg_id, password)
         res.status(200).json({user})
+        res.header('Allow-Access-Control-Origin', '*')
     }
 
     catch(error){
