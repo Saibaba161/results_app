@@ -11,6 +11,7 @@ const app = express()
  const corsOptions = {
    origin: '*',//(https://your-client-app.com)
    optionsSuccessStatus: 200,
+   methods : ["GET","POST","PUT","DELETE"],
   'Access-Control-Allow-Origin': '*'
  };
 
