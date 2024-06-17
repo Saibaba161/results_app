@@ -8,7 +8,12 @@ const userRoutes = require('./routes/userRoutes')
 //express app
 const app = express()
 
-app.use(cors())
+ const corsOptions = {
+   origin: 'https://www.saibaba.uncalledinnovators.com/',//(https://your-client-app.com)
+   optionsSuccessStatus: 200,
+ };
+
+ app.use(cors(corsOptions));
 //middleware
 app.use(express.json())
 app.use((req, res, next) => {
