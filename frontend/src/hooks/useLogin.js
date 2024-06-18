@@ -8,11 +8,12 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('http://result.uncalledinnovators.com/api/user/login', {mode: 'cors'},
+        const response = await fetch('http://result.uncalledinnovators.com/api/user/login',
         {
             method: 'POST',
             body: JSON.stringify({reg_id, password}),
-            headers: {'Content-Type': 'application/json'},
+            mode:'cors',
+            headers: {'Content-Type': 'application/json'}
         })
 
         const json = await response.json()
