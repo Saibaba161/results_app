@@ -8,13 +8,8 @@ const userRoutes = require('./routes/userRoutes')
 //express app
 const app = express()
 
- const corsOptions = {
-   origin: '*',//(https://your-client-app.com)
-   optionsSuccessStatus: 200,
-   methods : ["GET","POST","PUT","DELETE"]
- };
 
- app.use(cors(corsOptions));
+ app.use(cors());
 //middleware
 app.use(express.json())
 app.use((req, res, next) => {
